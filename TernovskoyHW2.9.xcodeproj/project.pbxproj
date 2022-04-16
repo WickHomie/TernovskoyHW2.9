@@ -13,6 +13,9 @@
 		312BA905280810D400E95A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 312BA903280810D400E95A19 /* Main.storyboard */; };
 		312BA907280810D500E95A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312BA906280810D500E95A19 /* Assets.xcassets */; };
 		312BA90A280810D500E95A19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 312BA908280810D500E95A19 /* LaunchScreen.storyboard */; };
+		31EBE6792808164800805DDA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EBE6782808164800805DDA /* DataManager.swift */; };
+		31EBE67B2808165C00805DDA /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EBE67A2808165C00805DDA /* Animation.swift */; };
+		4EB9B63D519CC103E48B55C4 /* libPods-TernovskoyHW2.9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 769B93F53048712B6DFA58AE /* libPods-TernovskoyHW2.9.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		312BA906280810D500E95A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		312BA909280810D500E95A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		312BA90B280810D500E95A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31EBE6782808164800805DDA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		31EBE67A2808165C00805DDA /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		769B93F53048712B6DFA58AE /* libPods-TernovskoyHW2.9.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TernovskoyHW2.9.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1E573458089EC1D49E064C /* Pods-TernovskoyHW2.9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TernovskoyHW2.9.release.xcconfig"; path = "Target Support Files/Pods-TernovskoyHW2.9/Pods-TernovskoyHW2.9.release.xcconfig"; sourceTree = "<group>"; };
+		EF2AF4029E2B63122D471DA8 /* Pods-TernovskoyHW2.9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TernovskoyHW2.9.debug.xcconfig"; path = "Target Support Files/Pods-TernovskoyHW2.9/Pods-TernovskoyHW2.9.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB9B63D519CC103E48B55C4 /* libPods-TernovskoyHW2.9.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				312BA8FC280810D400E95A19 /* TernovskoyHW2.9 */,
 				312BA8FB280810D400E95A19 /* Products */,
+				B411E8FDFB15C41CCF068D6E /* Pods */,
+				FB7FBE3CCC6E463643C6E450 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +71,30 @@
 				312BA8FF280810D400E95A19 /* SceneDelegate.swift */,
 				312BA901280810D400E95A19 /* ViewController.swift */,
 				312BA903280810D400E95A19 /* Main.storyboard */,
+				31EBE6782808164800805DDA /* DataManager.swift */,
+				31EBE67A2808165C00805DDA /* Animation.swift */,
 				312BA906280810D500E95A19 /* Assets.xcassets */,
 				312BA908280810D500E95A19 /* LaunchScreen.storyboard */,
 				312BA90B280810D500E95A19 /* Info.plist */,
 			);
 			path = TernovskoyHW2.9;
+			sourceTree = "<group>";
+		};
+		B411E8FDFB15C41CCF068D6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF2AF4029E2B63122D471DA8 /* Pods-TernovskoyHW2.9.debug.xcconfig */,
+				DE1E573458089EC1D49E064C /* Pods-TernovskoyHW2.9.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB7FBE3CCC6E463643C6E450 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				769B93F53048712B6DFA58AE /* libPods-TernovskoyHW2.9.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 312BA90E280810D500E95A19 /* Build configuration list for PBXNativeTarget "TernovskoyHW2.9" */;
 			buildPhases = (
+				F26544948A7DF1BE7750629C /* [CP] Check Pods Manifest.lock */,
 				312BA8F6280810D400E95A19 /* Sources */,
 				312BA8F7280810D400E95A19 /* Frameworks */,
 				312BA8F8280810D400E95A19 /* Resources */,
+				53B4579F51836148E3943842 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,13 +165,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		53B4579F51836148E3943842 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TernovskoyHW2.9/Pods-TernovskoyHW2.9-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TernovskoyHW2.9/Pods-TernovskoyHW2.9-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TernovskoyHW2.9/Pods-TernovskoyHW2.9-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F26544948A7DF1BE7750629C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TernovskoyHW2.9-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		312BA8F6280810D400E95A19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				312BA902280810D400E95A19 /* ViewController.swift in Sources */,
+				31EBE6792808164800805DDA /* DataManager.swift in Sources */,
 				312BA8FE280810D400E95A19 /* AppDelegate.swift in Sources */,
+				31EBE67B2808165C00805DDA /* Animation.swift in Sources */,
 				312BA900280810D400E95A19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +358,7 @@
 		};
 		312BA90F280810D500E95A19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF2AF4029E2B63122D471DA8 /* Pods-TernovskoyHW2.9.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,12 +381,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		312BA910280810D500E95A19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE1E573458089EC1D49E064C /* Pods-TernovskoyHW2.9.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -332,7 +410,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,6 @@
+module Pods_TernovskoyHW2_9 {
+  umbrella header "Pods-TernovskoyHW2.9-umbrella.h"
+
+  export *
+  module * { export * }
+}
